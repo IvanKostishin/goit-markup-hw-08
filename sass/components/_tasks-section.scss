@@ -1,6 +1,10 @@
 .tasks {
     padding-bottom: 94px;
 
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
 &__title {
     color: var(--secondary-text-color);
     font-size: 36px;
