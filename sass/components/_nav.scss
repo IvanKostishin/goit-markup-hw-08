@@ -1,0 +1,55 @@
+.nav {
+    display: flex;
+   justify-content: space-between; 
+    
+//     text-decoration: none;
+//     display: flex;
+//     align-items: center;
+
+    &__link {
+    text-decoration: none;
+    position: relative;
+    color: var(--secondary-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 32px 0;
+    transition: color var(--transition-time);
+    display: block;
+    outline: none;
+}
+
+&__link::after {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--bg-color);
+    transition: opacity var(--transition-time);
+    content: '';
+}
+
+&__link--current {
+    color: var(--bg-color);
+}
+
+&__link--current::after {
+    opacity: 1;
+}
+
+&__link:hover,
+&__link:focus {
+    color: var(--prime-logo-color);
+}
+
+
+&__link:hover::after,
+&__link:focus::after {
+    opacity: 1;
+}
+}

@@ -1,0 +1,68 @@
+.header {
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border-header-color);
+
+&__container {
+    max-width: 480px;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+&__list {
+    display: none;
+    // list-style: none;
+    // display: flex;
+    // gap: 50px;
+    // margin-left: 93px;
+}
+
+&__contact {
+    display: none;
+    // list-style: none;
+    // display: flex;
+    // gap: 50px;
+}
+
+&__contacts {
+    text-decoration: none;
+    position: relative;
+    align-items: center;
+    color: var(--prime-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 32px 0;
+    transition: color var(--transition-time);
+    display: flex;
+    outline: none;
+
+&:hover,
+&:focus {
+    color: var(--prime-logo-color);
+}  
+}
+
+&__img {
+    margin-right: 10px;
+    fill: var(--prime-text-color);
+    transition: fill var(--transition-time);
+}
+
+&__contacts:hover &__img,
+&__contacts:focus &__img {
+    fill: var(--bg-color);
+}
+
+&__mobile-menu {
+    display: block;
+    border: none;
+    background-color: transparent;
+}
+
+}

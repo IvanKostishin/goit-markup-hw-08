@@ -1,0 +1,41 @@
+.tasks {
+    padding-bottom: 94px;
+
+&__title {
+    color: var(--secondary-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+&__list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+&__item {
+    position: relative;
+}
+
+&__discription {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--task-description-color);
+}
+
+&__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: var(--nav-background-color);
+    text-transform: uppercase;
+}
+}
