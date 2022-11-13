@@ -3,29 +3,43 @@
     color: var(--secondary-text-color);
     font-size: 28px;
     line-height: 1.18;
-    // font-size: 36px;
-    // line-height: 1.17;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+}
 }
 
 &__list {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     gap: 30px;
     list-style: none;
     margin-top: 30px;
-    // margin-top: 50px;
     cursor: pointer;
-    width: 100%;
 
+@media screen and (min-width: 1200px) {
+    margin-top: 50px;
+}
 }
 
 &__item {
-    width: 45%;
+    display: block;
+    flex-basis: calc((100% - 30px) / 2);
     height: 92px;
     box-sizing: border-box;
     border: 1px solid var(--social-list-item-color);
     border-radius: 4px;
 
+@media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+@media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 6);
+}
 }
 
 &__link {

@@ -2,10 +2,12 @@
     display: flex;
    justify-content: space-between; 
     
-//     text-decoration: none;
-//     display: flex;
-//     align-items: center;
-
+    @media screen and (min-width: 1200px) {
+     text-decoration: none;
+    display: flex;
+    align-items: center;
+    }
+    
     &__link {
     text-decoration: none;
     position: relative;

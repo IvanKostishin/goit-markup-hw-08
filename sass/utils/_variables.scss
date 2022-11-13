@@ -1,105 +1,107 @@
 :root {
-    --prime-background-color: #f5f5f5;
-    --hero-color: #2f303a;
-    --nav-background-color: #ffffff;
-    --team-background-color: #f5f4fa;
-    --prime-text-color: #757575;
-    --secondary-text-color: #212121;
-    --prime-logo-color: #2196f3;
-    --secondary-logo-color: #000000;
-    --bg-color: #2196f3;
-    --activ-bg-color: #188ce8;
-    --border-header-color: #ececec;
-    --border-color: #eeeeee;
-    --secondary-adress: rgba(255, 255, 255, 0.6);
-    --social-list-item-color: #afb1b8;
-    --bgc-social-list-footer: rgba(255, 255, 255, 0.1);
-    --task-description-color: rgba(47, 48, 58, 0.8);
-    --portfolio-discription-color: rgba(33, 150, 243, 0.9);
-    --input-border-color: rgba(33, 33, 33, 0.2);
-    --transition-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --prime-background-color: #f5f5f5;
+  --hero-color: #2f303a;
+  --nav-background-color: #ffffff;
+  --team-background-color: #f5f4fa;
+  --prime-text-color: #757575;
+  --secondary-text-color: #212121;
+  --prime-logo-color: #2196f3;
+  --secondary-logo-color: #000000;
+  --bg-color: #2196f3;
+  --activ-bg-color: #188ce8;
+  --border-header-color: #ececec;
+  --border-color: #eeeeee;
+  --secondary-adress: rgba(255, 255, 255, 0.6);
+  --social-list-item-color: #afb1b8;
+  --bgc-social-list-footer: rgba(255, 255, 255, 0.1);
+  --task-description-color: rgba(47, 48, 58, 0.8);
+  --portfolio-discription-color: rgba(33, 150, 243, 0.9);
+  --input-border-color: rgba(33, 33, 33, 0.2);
+  --transition-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
-    background-color: var(--nav-background-color);
-    color: var(--prime-text-color);
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    line-height: 1.71;
+  background-color: var(--nav-background-color);
+  color: var(--prime-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 h1,
 h2,
 h3,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: auto;
 }
 
 .container {
-    padding: 0 15px;
-    margin: 0 auto;
+  padding: 0 15px;
+  margin: 0 auto;
 
-        width: 480px;
+  max-width: 480px;
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
     padding-bottom: 94px;
-    }
+  }
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(0);
 }
 
 body.modal-open {
-    overflow: hidden;
+  overflow: hidden;
 }
