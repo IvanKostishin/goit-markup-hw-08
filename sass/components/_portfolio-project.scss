@@ -42,7 +42,6 @@
 &__container {
     position: relative;
     width: 100%;
-    height: 294px;
     overflow: hidden;
 }
 
@@ -58,9 +57,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 294px;
+    height: 100%;
     padding: 63px 24px;
-    transform: translateY(100%);
+    transform: translateY(101%);
     background-color: var(--portfolio-discription-color);
     transition: transform var(--transition-time);
 }

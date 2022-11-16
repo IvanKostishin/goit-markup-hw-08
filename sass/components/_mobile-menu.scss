@@ -8,6 +8,12 @@
   background-color: var(--nav-background-color);
   padding: 48px 40px;
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
   &.is-open {
     display: block;
   }
@@ -47,9 +53,13 @@
     }
   }
 
+  &__nav-link--curent {
+    color: var(--prime-logo-color);
+  }
+
   &__list {
     list-style: none;
-    margin-top: 306px;
+    margin-top: auto;
   }
 
   &__list-link {
@@ -80,10 +90,14 @@
     text-decoration: none;
     padding: 0 10px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 10px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--prime-logo-color);
+
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+    }
   }
 
   &__social-item:not(:last-child) {
